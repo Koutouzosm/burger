@@ -14,7 +14,7 @@
       </form>
     </div>
     {{!-- end left column --}}
-    {{!-- right column to display cats--}}
+    {{!-- right column to display burgers--}}
     <div class="col-12 col-md-9">
       {{!-- make two columns in right column --}}
       <div class="row">
@@ -22,7 +22,7 @@
         <div class="col-12 col-md-6">
           <h2>Burger's not eaten yet, Choose wisely!</h2>
           <ul class="list-group">
-            {{!-- use handlebars to print cats that aren't sleepy --}}
+            {{!-- use handlebars to print burgers that aren't devoured --}}
             {{#each burgerData}}
               {{!-- this is the same as saying !== --}}
               {{#unless devoured}}
@@ -37,7 +37,7 @@
                     Destroy it!!
                     </button>
 
-                    {{!-- delete cat --}}
+                    {{!-- delete burger --}}
                     <button
                       data-id="{{id}}"
                       class="btn btn-sm btn-danger delete-burger"
@@ -55,7 +55,7 @@
         <div class="col-12 col-md-6">
           <h2>Burgers that were so good they got eaten!</h2>
           <ul class="list-group">
-            {{!-- use handlebars to print cats that aren't sleepy --}}
+ 
             {{#each burgerData}}
             {{!-- this is the same as saying !== --}}
             {{#if devoured}}
