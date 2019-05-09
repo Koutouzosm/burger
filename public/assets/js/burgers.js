@@ -1,10 +1,8 @@
 $(document).ready(function(){
-
     // binds even listerner to the submit FORM
     $("#burger-form").on("submit", function(event) {
 
       event.preventDefault();
-  
     //   packages up form data for req.burgers
       const burgerData = {
         burger_name: $("#name-input").val().trim()
